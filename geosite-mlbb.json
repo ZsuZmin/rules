@@ -32,7 +32,17 @@
         "apichain.catappult.io",
         "tnc16-alisg.isnssdk.com",
         "payflowsdk.aptoide.com",
-        "graph.facebook.com"
+        "graph.facebook.com",
+        "beacons.gcp.gvt2.com",
+        "api.githubcopilot.com",
+        "proxy.individual.githubcopilot.com",
+        "api.github.com",
+        "education.github.com",
+        "copilot-telemetry.githubusercontent.com",
+        "api.individual.githubcopilot.com",
+        "mtalk.google.com",
+        "www.gstatic.com",
+        "telemetry.individual.githubcopilot.com"
       ],
       "domain_suffix": [
         "moonton.com",
