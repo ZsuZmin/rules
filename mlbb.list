@@ -1,31 +1,13 @@
-# --- 域名匹配 (由高频日志提取) ---
-# 精准匹配：游戏支付与钱包 CDN，解决日志中爆发式的 TCP 连接
-DOMAIN,xpaywalletcdn-prod.azureedge.net
-# 后缀匹配：涵盖所有微软 Azure 加速节点，MLBB 资源多存于此
-DOMAIN-SUFFIX,azureedge.net
-# 后缀匹配：沐瞳游戏官网及 API
-DOMAIN-SUFFIX,moonton.com
-# 后缀匹配：无尽对决 (MLBB) 游戏主域名
-DOMAIN-SUFFIX,mobilelegends.com
-# 后缀匹配：沐瞳旗下的游戏发行平台
-DOMAIN-SUFFIX,youngjoygame.com
-
-# --- IP 段匹配 (游戏逻辑与对战流) ---
-# 匹配 IBM Cloud / SoftLayer 位于全球的游戏服务器 IP (161.202.x.x)
-IP-CIDR,161.202.0.0/16,no-resolve
-# 匹配位于欧洲或亚洲部分的 SoftLayer 节点 (158.177.x.x)
-IP-CIDR,158.177.0.0/16,no-resolve
-# 匹配 SoftLayer 位于美西或新加坡的节点 (169.57.x.x)
-IP-CIDR,169.57.0.0/16,no-resolve
-# 匹配位于 Zenlayer 等服务商的服务器 (169.62.x.x)
-IP-CIDR,169.62.0.0/16,no-resolve
-# 匹配 Zenlayer 全球加速节点，常用于游戏的 UDP 对战数据传输
-IP-CIDR,61.61.64.0/18,no-resolve
-# 匹配位于东南亚区域的游戏服务器常用 IP 段
-IP-CIDR,128.1.0.0/16,no-resolve
-# 匹配腾讯云国际/腾讯游戏相关节点，用于社交或下载加速
-IP-CIDR,101.32.0.0/16,no-resolve
-
-# --- 系统服务 ---
-# 后缀匹配：NTP 时间同步服务，确保游戏对时准确
-DOMAIN-SUFFIX,pool.ntp.org
+xpaywalletcdn-prod.azureedge.net
++.azureedge.net
++.moonton.com
++.mobilelegends.com
++.youngjoygame.com
+161.202.0.0/16
+158.177.0.0/16
+169.57.0.0/16
+169.62.0.0/16
+61.61.64.0/18
+128.1.0.0/16
+101.32.0.0/16
++.pool.ntp.org
